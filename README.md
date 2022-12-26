@@ -6,10 +6,6 @@ Hyperspectral Image Super Resolution with Real Unaligned RGB Guidance
 
 <img src="asset/dataset.png" width="700px"/>
 
-## News :sparkles:
-
-- 2022-12-10: release test code and dataset.
-
 ## Usage
 
 [Pretrained Model](https://1drv.ms/u/s!AuS3o7sEiuJnmGzI1puJNkC_WGVE?e=MblcI2)
