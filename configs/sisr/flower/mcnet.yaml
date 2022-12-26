@@ -1,0 +1,11 @@
+data:
+  batch_size: 16
+
+module:
+  lr: 0.0001
+  model_cfg:
+    type@: mcnet
+    sf: 8
+    n_colors: 31
+    stat_path: /media/exthdd/laizeqiang/lzq/projects/ref-sr/hsi_ref_sr/flower_stats.npz
+

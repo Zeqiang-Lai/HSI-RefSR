@@ -1,0 +1,7 @@
+train:
+  dataset:
+    root: data/flower
+
+test:
+  dataset:
+    root: data/flower

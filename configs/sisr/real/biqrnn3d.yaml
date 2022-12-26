@@ -1,0 +1,4 @@
+module:
+  lr: 0.00001
+  model_cfg:
+    type@: biqrnn3d

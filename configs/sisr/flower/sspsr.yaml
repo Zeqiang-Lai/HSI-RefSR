@@ -1,0 +1,10 @@
+data:
+  use_2dconv: True  # in sspsr, we need [B,C,H,W] format, instead of [B,1,C,H,W]
+
+module:
+  lr: 0.0001
+  model_cfg:
+    type@: sspsr
+    sf: 8
+    n_colors: 31
+

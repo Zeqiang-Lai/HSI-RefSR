@@ -1,0 +1,37 @@
+train:
+  dataset:
+    type@: refsr.SRFDataset
+    input: "img1"
+    ref: "img2"
+    names_path: train.txt
+    sf: 4
+    crop_size: [320,512]
+    repeat: 5
+    use_cache: True
+  loader:
+    batch_size: 1
+    shuffle: True
+    num_workers: 1
+    pin_memory: True
+
+test:
+  dataset:
+    type@: refsr.SRFDataset
+    input: "img1"
+    ref: "img2"
+    names_path: test.txt
+    sf: 4
+    use_cache: True
+  loader:
+    batch_size: 1
+    shuffle: False
+
+engine:
+  max_epochs: 200
+  mnt_metric: val_psnr
+  mnt_mode: max
+  log_img_step: 10
+  valid_log_img_step: 1
+  pbar: qqdm
+  save_per_epoch: 10
+  enable_tensorboard: False

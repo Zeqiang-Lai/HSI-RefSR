@@ -1,0 +1,17 @@
+data:
+  train_root: data/real/sisr_64_31.db
+  test_root: data/real/img1_hsi/HR
+  test_fns: data/real/test.txt
+  sf: 4
+  batch_size: 16
+  use_2dconv: False     # it depends on model, default to False
+  key: gt
+
+engine:
+  max_epochs: 50
+  log_img_step: 200
+  valid_log_img_step: 1
+  mnt_metric: val_psnr
+  mnt_mode: max
+  save_per_epoch: 5
+  enable_tensorboard: False

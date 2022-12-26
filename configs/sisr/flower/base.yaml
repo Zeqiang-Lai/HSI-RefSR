@@ -1,0 +1,18 @@
+data:
+  train_root: data/flower/sisr_64_31.db
+  test_root: data/flower/0_0_hsi/HR
+  test_fns: data/flower/test.txt
+  sf: 8
+  batch_size: 16
+  use_2dconv: False     # it depends on model, default to False
+  crop_size: [320, 512] # only for flower dataset
+  key: gt
+
+engine:
+  max_epochs: 50
+  log_img_step: 200
+  valid_log_img_step: 1
+  mnt_metric: val_psnr
+  mnt_mode: max
+  save_per_epoch: 5
+  enable_tensorboard: False

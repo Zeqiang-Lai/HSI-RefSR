@@ -1,0 +1,7 @@
+train:
+  dataset:
+    root: data/real
+
+test:
+  dataset:
+    root: data/real

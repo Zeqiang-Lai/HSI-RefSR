@@ -1,0 +1,42 @@
+train:
+  dataset:
+    type@: refsr.OnDemandDataset
+    input: "0_0"
+    ref: "3_3"
+    names_path: train.txt
+    sf: 4
+  loader:
+    batch_size: 1
+    shuffle: True
+    num_workers: 1
+    pin_memory: True
+
+test:
+  dataset:
+    type@: refsr.OnDemandDataset
+    input: "0_0"
+    ref: "3_3"
+    names_path: test.txt
+    sf: 4
+  loader:
+    batch_size: 1
+    shuffle: False
+
+engine:
+  max_epochs: 50
+  mnt_metric: val_psnr
+  mnt_mode: max
+  log_img_step: 100
+  valid_log_img_step: 50
+  pbar: qqdm
+  save_per_epoch: 1
+  enable_tensorboard: False
+
+module:
+  type@: refsr.CommonModule
+  optimizer:
+    type@: AdamW
+    lr: 0.0001
+    weight_decay: 0.00005
+  model:
+    type@: CrossNetHSI

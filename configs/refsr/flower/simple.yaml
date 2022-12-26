@@ -1,0 +1,8 @@
+module:
+  type@: refsr.SimpleModule
+  optimizer:
+    type@: AdamW
+    lr: 0.0001
+    weight_decay: 0.00005
+  model:
+    type@: SimpleAutoEncoder

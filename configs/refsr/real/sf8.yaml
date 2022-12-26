@@ -1,0 +1,7 @@
+train:
+  dataset:
+    sf: 8
+
+test:
+  dataset:
+    sf: 8
