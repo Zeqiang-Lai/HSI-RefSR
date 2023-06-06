@@ -15,7 +15,7 @@ Hyperspectral Image Super Resolution with Real Unaligned RGB Guidance
 ## Usage
 
 [Pretrained Model](https://1drv.ms/u/s!AuS3o7sEiuJnmGzI1puJNkC_WGVE?e=MblcI2)
-| [Dataset](https://1drv.ms/u/s!AuS3o7sEiuJnmGsd7XtzN9ekPXt6?e=NeAExF)
+| [Dataset](https://huggingface.co/datasets/aaronb/HSI-RefSR)
 
 ### Testing
 
