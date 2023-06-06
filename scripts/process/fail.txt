@@ -1,0 +1,12 @@
+10 remove?
+14 remove
+21 al.align_image(img1*2, img2*2)
+23 al.align_image(img1*2, img2*2)
+24
+25
+26 remove 
+34 al.align_image(img1*2, img2*2)
+40 K=5, threshold=4 al.align_image(img1*2, img2*2)
+43 K=15, threshold=0.4
+44 ok
+56

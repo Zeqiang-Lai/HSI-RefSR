@@ -4,7 +4,13 @@ Hyperspectral Image Super Resolution with Real Unaligned RGB Guidance
 
 [Zeqiang Lai](https://zeqiang-lai.github.io/), [Ying Fu](https://ying-fu.github.io/), [Jun Zhang](https://ysg.ckcest.cn/html/details/3911/index.html)
 
+
 <img src="asset/dataset.png" width="700px"/>
+
+## News :sparkles:
+
+- 2023-6-6: release all code and full dataset.
+- 2022-12-10: release test code and dataset.
 
 ## Usage
 
@@ -24,7 +30,7 @@ python run_refsr.py test -s saved/real-sf4 -r best
 
 ### Training
 
-🏃‍♂️ TBD, it will be released soon.
+🏃‍♂️ TBD
 
 ## Citation
 
